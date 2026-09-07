@@ -91,86 +91,86 @@ Save Model
      ↓
 Streamlit Application
 
-
-
-👥 Team Members & Responsibilities
-👑 Member 1 — Team Leader (Mohaned Mohamed Hanfy Amin)
-Responsibilities
-Member 1 is responsible for coordinating the entire project and integrating the work of all team members.
-Main responsibilities:
-- Manage the GitHub repository.
-- Coordinate the work between team members.
-- Review Pull Requests.
-- Integrate the different project components.
-- Train Machine Learning models.
-- Train Multinomial Naive Bayes.
-- Train Logistic Regression.
-- Train SVM.
-- Generate predictions.
-- Calculate evaluation metrics.
-- Generate confusion matrices.
-- Compare the Machine Learning models.
-- Perform Hyperparameter Tuning.
-- Use GridSearchCV.
-- Analyze tuning results.
-- Select the best-performing model.
-- Save the final model.
-- Perform final model validation.
-- Make sure all project components work together
-
-👤 Member 2 — Data Exploration & Preprocessing (asser abdallah ahmed mohammed)
-Responsibilities
-Member 2 is responsible for understanding and preparing the raw dataset before Machine Learning.
-Main responsibilities:
-- Load the raw dataset.
-- Inspect the dataset.
-- Check the number of rows and columns.
-- Check column names.
-- Check missing values.
-- Check duplicate records.
-- Analyze label distribution.
-- Rename the dataset columns.
-- Select the required columns.
-- Remove missing records.
-- Remove duplicate records.
-- Validate Spam and Ham labels.
-- Prepare the cleaned dataset.
-- Save the cleaned dataset.
-
-
-👤 Member 3 — Feature Extraction (mariam yahia ahmad)
-Responsibilities
-Member 3 is responsible for converting the cleaned text data into numerical features that can be used by Machine Learning algorithms.
-Main responsibilities:
-- Load the cleaned dataset.
-- Create X and y.
-- Perform Train/Test Split.
-- Use train_test_split.
-- Maintain Spam/Ham distribution using stratify.
-- Apply CountVectorizer.
-- Fit the vectorizer only on training data.
-- Transform the testing data.
-- Check feature dimensions.
-- Perform feature sanity checks.
-- Prevent data leakage.
-- Save the CountVectorizer.
-- Save training and testing features.
-- Save training and testing labels.
-
-👤 Member 4 — Streamlit Application & Documentation (Raghad mamdouh)
-Responsibilities
-Member 4 is responsible for building the user-facing application and helping finalize the project documentation.
-Main responsibilities:
-- Build the Streamlit application.
-- Create the user interface.
-- Create a text input for messages.
-- Load the saved CountVectorizer.
-- Load the saved best model.
-- Transform new messages.
-- Make predictions.
-- Display Spam/Ham results.
-- Display prediction probabilities when available.
-- Test the application.
-- Organize result files.
-- Maintain and update the README.
-- Help prepare the final project documentation.
+<h2>👥 Team Members &amp; Responsibilities</h2>
+<h3>👑 Member 1 — Team Leader (Mohaned Mohamed Hanfy Amin)</h3>
+<h4>Responsibilities</h4>
+<p>
+  Member 1 is responsible for coordinating the project and integrating
+  the work completed by all team members.
+</p>
+<ul>
+  <li>Manage the GitHub repository.</li>
+  <li>Coordinate tasks between team members.</li>
+  <li>Review Pull Requests.</li>
+  <li>Merge the completed project components.</li>
+  <li>Ensure that all notebooks and files work together.</li>
+  <li>Review the final project workflow.</li>
+  <li>Prepare the project for final submission.</li>
+</ul>
+<h3>👤 Member 2 — Data Exploration &amp; Preprocessing (Asser Abdallah Ahmed Mohammed)</h3>
+<h4>Responsibilities</h4>
+<p>
+  Member 2 is responsible for understanding, cleaning, and preparing
+  the raw dataset before the Machine Learning stages.
+</p>
+<ul>
+  <li>Load the raw SMS Spam dataset.</li>
+  <li>Inspect the dataset structure.</li>
+  <li>Check the number of rows and columns.</li>
+  <li>Check column names and data types.</li>
+  <li>Check missing values.</li>
+  <li>Check duplicated records.</li>
+  <li>Analyze the distribution of Spam and Ham messages.</li>
+  <li>Rename the required columns.</li>
+  <li>Select the label and message columns.</li>
+  <li>Remove missing and duplicated records.</li>
+  <li>Validate the Spam and Ham labels.</li>
+  <li>Save the cleaned dataset.</li>
+</ul>
+<h3>👤 Member 3 — Feature Extraction &amp; Model Training (Mariam Yahia Ahmad)</h3>
+<h4>Responsibilities</h4>
+<p>
+  Member 3 is responsible for converting the cleaned text messages into
+  numerical features and training the first two classification models.
+</p>
+<ul>
+  <li>Load the cleaned dataset.</li>
+  <li>Prepare X as the messages and y as the labels.</li>
+  <li>Split the dataset into training and testing sets.</li>
+  <li>Maintain the Spam and Ham distribution using stratified splitting.</li>
+  <li>Apply CountVectorizer to the training messages.</li>
+  <li>Transform the testing messages using the fitted vectorizer.</li>
+  <li>Prevent data leakage by fitting the vectorizer on training data only.</li>
+  <li>Train the Multinomial Naive Bayes model.</li>
+  <li>Train the Logistic Regression model.</li>
+  <li>Generate predictions for both models.</li>
+  <li>Calculate Accuracy, Precision, Recall, and F1-Score.</li>
+  <li>Save the CountVectorizer and processed features.</li>
+  <li>Save the trained Naive Bayes and Logistic Regression models.</li>
+</ul>
+<h3>👤 Member 4 — SVM, Evaluation &amp; Optimization (Raghad Mamdouh)</h3>
+<h4>Responsibilities</h4>
+<p>
+  Member 4 is responsible for training and evaluating the Linear SVM model,
+  analyzing the Confusion Matrices, optimizing the SVM model, and comparing
+  the performance of all classification models.
+</p>
+<ul>
+  <li>Load the processed training and testing features.</li>
+  <li>Train the Linear Support Vector Machine model.</li>
+  <li>Generate predictions using Linear SVM.</li>
+  <li>Calculate Accuracy, Precision, Recall, and F1-Score for Linear SVM.</li>
+  <li>Treat Spam as the positive class during evaluation.</li>
+  <li>Create and visualize the Confusion Matrices.</li>
+  <li>Explain True Positive, True Negative, False Positive, and False Negative results.</li>
+  <li>Compare the performance of Naive Bayes, Logistic Regression, and Linear SVM.</li>
+  <li>Apply GridSearchCV to optimize the Linear SVM model.</li>
+  <li>Test different values of the C hyperparameter.</li>
+  <li>Use 5-fold Cross-Validation during optimization.</li>
+  <li>Identify the best SVM hyperparameter and Cross-Validation score.</li>
+  <li>Compare SVM performance before and after optimization.</li>
+  <li>Analyze and explain the final model results.</li>
+  <li>Select the best overall model based on the evaluation results.</li>
+  <li>Save the original and optimized Linear SVM models.</li>
+  <li>Contribute to the final README and project documentation.</li>
+</ul>
